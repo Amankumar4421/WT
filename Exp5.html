@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome</title>
+		<script>
+			function fact()
+			{
+				let n = document.getElementById("ab").value;
+				if(n){
+				let sum;
+				sum=1;
+				for(let i=n;i>0;i--)
+				{
+					sum=sum*i;
+				}
+				document.getElementById("dj").value = sum;
+			}
+			else{
+				document.getElementById("dj").value = "Please Enter the number";
+			}
+			}
+			function fib()
+			{
+				let n = document.getElementById("ab").value;
+				if(n){
+				let a,b,c;
+				let result="";
+				a=0;
+				b=1;
+				c=1;
+				if(n>=1)
+				{
+					result+=a;
+					result+=" ";
+				}
+				if(n>=2)
+				{
+					result+=b;
+					result+=" ";
+				}
+				if(n>2)
+				{
+					for(let i=2;i<n;i++)
+					{
+						c=a+b;
+						result+=c;
+						result+=" ";
+						a=b;
+						b=c;
+					}
+					document.getElementById("dj").value = result;
+				}
+			}
+			else{
+				document.getElementById("dj").value = "Please Enter the number";
+			}
+			}
+			function prime()
+			{
+				let n = document.getElementById("ab").value;
+				if(n){
+				let count=0;
+				for(let i=2;i<n;i++)
+				{
+					if(n%i==0)
+						count++;
+				}
+				if(count==0)
+				{
+					document.getElementById("dj").value = 'Prime';
+				}
+				else
+				{
+					document.getElementById("dj").value = 'Not Prime';
+				}
+			}
+			else{
+				document.getElementById("dj").value = "Please Enter the number";
+			}
+			}
+			function fun()
+			{
+				let n = document.getElementById("ab").value;
+				if(n){
+				let l;
+				l=n.length;
+				let f=true;
+				for(let i=0;i<l/2;i++)
+				{
+					if(n[i]!==n[l-i-1])
+					{
+						f=false;
+						break;
+					}
+				}
+				if(f==false)
+				{
+					document.getElementById("dj").value = 'Not a Palindrome';
+				}
+				else
+				{
+					document.getElementById("dj").value = 'Palindrome';
+				}
+			}
+			else{
+				document.getElementById("dj").value = "Please Enter the number";
+			}
+			}
+		</script>
+		<style>
+			button{
+				width:100px;
+				height:50px;
+				background-color: lightblue;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Experiment 5</h1>
+		Enter Number : <input type="text" id="ab"><br><br>
+		Result : <input type="text" id="dj" ><br><br>
+		<button onclick="fact()">Factorial</button>
+		<button onclick="fib()">Fibonacci</button>
+		<button onclick="prime()">Prime</button>
+		<button onclick="fun()">Palindrome</button>
+	</body>
+</html>

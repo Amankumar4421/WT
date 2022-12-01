@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    <title>SignUp</title>
+</head>
+<style>
+    body{
+        background-image: url('back.jpg');
+    }
+    #login{
+        height: 580px;
+        left: 32%;
+        right: 32%;
+        top: 5%;
+        position: absolute;
+        background-color: white;
+        border-radius: 30px;
+    }
+    #log{
+        padding: 0% 20% 20% 20%;
+    }
+    h1{
+        font-size: 250%;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+    }
+    .box{
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left: hidden;
+        border-bottom: 5px solid rgb(102, 88, 88);
+        border-radius: 8px;
+        height:35px;
+        width: 300px;
+        font-size: 100%;
+    }
+    .un{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 120%;
+    }
+    #abc{
+        text-decoration: none;
+        float: right;
+        font-size: 20px;
+    }
+    .but{
+        font-size: 20px;
+        text-align: center;
+    }
+    button{
+        width: 300px;
+        height: 35px;
+        border-radius: 60px;
+        background-image: url(back.jpg);
+        border: hidden;
+        color: white;
+        font-size: 100%;
+        font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    p{
+        text-align: center;
+    }
+    img{
+        height: 40px;
+        width: 40px;
+    }
+    #at{
+        word-spacing: 39px;
+    }
+    #s{
+        text-decoration: none;
+        font-size: 21px;
+    }
+    .input{
+        line-height: 30px;
+    }
+</style>
+<script src="valid2.js"></script>
+<body>
+    <form id="login" name="form1">
+        <div id="log">
+            <h1>SignUp</h1>
+            <div class="input">
+                <div class="un">Name</div>
+                <input type="text" name="name" id="username" class="box" placeholder="Type your Username"><br>
+                <div class="un">Email</div>
+                <input type="email" name="email" id="email" class="box" placeholder="Type your Email"><br>
+                <div class="un">Password</div>
+                <input type="password" name="pass" id="password" class="box" placeholder="Type your Password"><br>
+                <div class="un">Retype Password</div>
+                <input type="password" name="pass" id="password1" class="box" placeholder="Type your Password"><br>
+            </div><br>
+                <div class="but">
+                    <button onclick="fun()">SIGNUP</button>
+                </div>
+                <p>Or SignUp Using</p>
+                <div id="at">
+                    <a href=""><img src="google.png" alt="google"></a>
+                    <a href=""><img src="face.jpg" alt="facebook"></a>
+                    <a href=""><img src="git.svg" alt="github"></a>
+                    <a href= ""><img src="link.png" alt="linkedin"></a>
+                </div><br>
+        </div>
+    </form>
+</body>
+</html>

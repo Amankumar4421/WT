@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Q2</title>
+</head>
+<body>
+    <h1>Enter number :</h1>
+    <input type="number" id="n">
+    <h1>Factorial:</h1>
+    <h1 id="ab"></h1>
+    <script>
+        function fun(n){
+            var sum=1;
+            while(n>0)
+            {
+                sum=sum*n;
+                n=n-1;
+            }
+            document.getElementById("ab").innerHTML=sum;
+        }
+    </script>
+    <button onclick="fun(n.value)">Find Factorial</button>
+</body>
+</html>

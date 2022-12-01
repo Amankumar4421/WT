@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Exp-07</title>
+    <script>
+        function fun()
+        {
+            document.getElementById("id").innerHTML="Blur";
+        }
+        function fun1()
+        {
+            document.getElementById("id").innerHTML="Focus";
+        }
+    </script>
+    <style>
+        span{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <span>Result : </span><span id="id"></span><br><br>
+    Username : <input type="text" id="" onblur="fun()" onfocus="fun1()">
+</body>
+</html>

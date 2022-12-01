@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <style>
+        body{
+            background-color:rgb(200 200 220);
+        }
+         h1{
+            text-align: center;
+            font-size: 200%;
+        } 
+        #lab{ 
+            font-size: 20px;
+            margin-left: 50px;
+            line-height: 30px;
+            float:left;
+        }
+        #in{
+            margin-left:20px;
+            line-height: 30px;
+            float:left;
+        }
+        table,th,td{
+            border: 1px solid;
+            border-collapse: collapse;
+            /* padding: 10px; */
+        }
+        td,th{
+            width: 70px;
+            height: 30px;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            background-color: antiquewhite;
+            margin-left: 200px;
+        }
+        #z{
+            height: 300px;
+        }
+    </style>
+    <script src="Email.js"></script>
+</head>
+<body>
+    <h1>Add Student</h1>
+    <div id="lab">
+        Reg. <br>
+        Name : <br>
+        Gender: <br>
+        Branch: <br>
+        Section: <br>
+        Email : <br>
+        Address : <br><br>
+        Password : <br>
+    </div>
+    <div id="in">
+        <input type="text" name="id" value=""><br>
+        <input type="text" name="FName" value=""><br>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Other<br>
+        <select>
+        <option selected>---Select---</option>
+        <option>CSE</option>
+        <option>IT</option>
+        <option>CIVIL</option>
+        <option>MECH</option>
+        <option>ECE</option>
+        <option>EEE</option>
+        </select><br>
+        <select>
+            <option selected>---Select---</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+        </select><br>
+        <input type="email" name="email" id="email"><br>
+		<textarea name="Add" cols="20" rows="3" ></textarea><br>
+        <input type="password" name="password" >
+    </div>
+    <div id="z">
+    <table id="abc">
+        <tr>
+            <th>Reg. NO</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Branch</th>
+            <th>Year</th>
+            <th>Semester</th>
+            <th>Mob No</th>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </table>
+    </div>
+    <div>
+        <button onclick="fun()">Add</button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar{
+    background-color: rgb(38, 101, 143);
+    height: 60px;
+}
+.navbar a{
+    overflow: auto;
+    float: right;
+    margin: 15px 23px;
+    font-size: 21px;
+    padding: 3px 3px;
+    text-decoration: none;
+    color:azure;
+}
+.navbar a:hover{
+    color: rgb(253, 203, 129);
+}
+.content a{
+    display: none;
+
+}

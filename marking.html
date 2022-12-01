@@ -1,0 +1,147 @@
+<html>
+      <head>
+        <style>
+          *{
+            background: rgb(215, 215, 220);
+          }
+         .ll{
+            margin-left: auto;
+            margin-right: auto;
+            width:70%;
+          }
+          td{
+            color:rgb(170, 32, 112);
+          }
+          .data{
+            text-align: center;
+          }
+          .tab{
+            position: absolute;
+            left: 25%;
+          }
+      </style>
+      </head>
+      <body>
+
+      <table border="2" class="ll">
+          <thead>
+            <tr>
+              <th>Department (class)</th>
+              <th>subject</th>
+              <th>Date</th>
+            </tr>
+            <tr>
+                <th>
+                    <select >
+                        <option >CSE</option>
+                        <option >IT</option>
+                        <option >MECH</option>
+                        <option >BIOTECH</option>
+                      </select>
+                </th>
+                <th>
+                    <select >
+                        <option >PP</option>
+                        <option >WT</option>
+                        <option >DAA</option>
+                        <option >COA</option>
+
+                      </select>
+                </th>
+                <th>
+                    <input type="date">
+                </th>
+            </tr>
+          </thead>
+      </table>
+      <br><br>
+
+      <div style="display: flex;">
+      <br><br>
+
+      <form action="" method="post" id="">
+
+        <table border="3" class="tab">
+          <thead>
+            <tr>
+              <th>Serial Number</th>
+              <th>Student Name</th>
+              <th>Student Register Number</th>
+              <th>Attendance</th>
+            </tr>
+          </thead>
+
+          <tr class="data">
+                                    <td>1</td>
+                                    <!--if student is present show this-->
+                                    <td style="background: grey;">Aman</td>
+                                    <td style="background: grey;">201FA04421</td>
+                                    <!--if studnet is absent show this one-->
+                                    <!-- <td style="background: pink;">studnet name</td>
+   <!-td style="background: pink;">studnet register number</td> -->
+
+                   <td ><button style="background:green" >Present</button>
+                   <button style="background:red">Absent</button></td>          
+          </tr>
+          
+          <tr class="data">
+            <td>2</td>
+            <td style="background: grey;">Amit</td>
+            <td style="background: grey;">201FA04408</td>
+            <td ><button style="background:green" >Present</button>
+                <button style="background:red">Absent</button></td>    
+          </tr>
+          <tr class="data">
+            <td>3</td>
+            <td style="background: grey;">nitish</td>
+            <td style="background: grey;">201FA04433</td>
+            <td ><button style="background:green" >Present</button>
+                <button style="background:red">Absent</button></td>    
+          </tr>
+          <tr class="data">
+            <td>4</td>
+            <td style="background: grey;">Suraj</td>
+            <td style="background: grey;">201FA04431</td>
+            <td ><button style="background:green" >Present</button>
+                <button style="background:red">Absent</button></td>    
+          </tr>
+          <tr class="data">
+            <td>5</td>
+            <td style="background: grey;">Shivam</td>
+            <td style="background: grey;">201FA04407</td>
+            <td ><button style="background:green" >Present</button>
+                <button style="background:red">Absent</button></td>    
+          </tr>
+          <tr class="data">
+            <td>6</td>
+            <td style="background: grey;">Arpit</td>
+            <td style="background: grey;">201FA04420</td>
+            <td ><button style="background:green" >Present</button>
+                <button style="background:red">Absent</button></td>    
+          </tr>
+          <tr class="data">
+            <td>7</td>
+            <td style="background: grey;">Ramesh</td>
+            <td style="background: grey;">201FA04411</td>
+            <td ><button style="background:green" >Present</button>
+                <button style="background:red">Absent</button></td>    
+          </tr>
+          <tr class="data">
+            <td>8</td>
+            <td style="background: grey;">Shiv</td>
+            <td style="background: grey;">201FA04409</td>
+            <td ><button type="button" >Primary</button>
+
+                <button style="background:red">Absent</button></td>    
+          </tr>
+      </table>
+      </form>
+      </div>
+      <button onclick="myFunction()">Sumbit</button>
+      <script>
+        function myFunction() {
+          alert("Attendance sucessfully submmited");
+        }
+        </script>
+      </body>
+      </html>

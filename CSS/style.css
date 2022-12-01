@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width:100%;
+    background: linear-gradient(to top,rgba(0, 0, 0,0.5)50%,rgba(0, 0, 0,0.5)50%),url(1.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: bisque;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 20px;
+    float:left;
+    padding-top: 10px;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ul li{
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 27px;
+    font-size: 18px;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+ul li a:hover{
+    color: rgb(231, 172, 99);
+}
+.search{
+    width: 300px;
+    float: left;
+    margin-left: 290px;
+}
+.srch{
+    font-family: 'Courier New', Courier, monospace;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgb(196, 151, 97);
+    margin-top: 5px;
+    color: white;
+    border-right: none;
+    font-size: 15px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: rgb(136, 117, 94);
+    border: 2px solid rgb(236, 177, 104);
+    margin-top: 5px;
+    color: white;
+    font-size: 18px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn:focus{
+    outline:none;
+
+}
+.srch:focus{
+    outline: none;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:50px;
+    padding-left:20px;
+    margin-top:10%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: rgb(233, 172, 97);
+    border: none;
+    margin-bottom: 10px;
+    margin-left:20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: white;
+}
+
+.content span{
+    color:rgb(230, 170, 98);
+    font-size: 60px
+}
+.form{
+    width: 250px;
+    height: 400px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 880px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(209, 159, 97);
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input{
+    width: 250px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid rgb(221, 157, 78);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: rgb(207, 140, 58);
+    border:none;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: white;
+    color:rgb(201, 142, 71);
+}
+.btnn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.form .link{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.form .link a{
+    text-decoration: none;
+    color: rgb(212, 155, 85)
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;;
+    text-align: center;
+}
+.icon{
+    text-decoration: none;
+    color: white;
+
+}
+.icon ion-icon{
+    color: white;
+    font-size: 30px;
+    padding-left: 6px;
+    padding-top: 5px;
+
+}
+.icon ion-icon:hover{
+    color:rgb(187, 132, 65);
+    transition: .3s ease;
+}

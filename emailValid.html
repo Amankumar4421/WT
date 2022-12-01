@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function CheckEmail() {
+                input = document.form1.text1.value;
+                var email = /^\w+([\.-]?\w+)*@\w*(\.\w{2,3})$/;
+                if (input.match(email)) {
+                    alert("Correct");
+                } else {
+                    alert("Wrong...!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="form1" action="#" onsubmit="CheckEmail()">
+            Enter EMail <input type="text" name="text1" />
+            <input type="submit" name="submit" value="Submit" />
+        </form>
+    </body>
+</html>

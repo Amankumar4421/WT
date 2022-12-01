@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+   <title>Document</title>
+    <style>
+        form{
+			text-align: center;
+		}
+		.abc{
+			width: 200px;
+			height: 30px;
+		}
+		#a{
+			width: 100px;
+			height: 40px;
+		}
+		#select{
+			width: 100px;
+			height: 30px;
+		}
+		a{
+			text-decoration: none;
+		}
+    </style>
+    <script src="valid.js">
+    </script>
+</head>
+<body>
+    <form name="form1">
+        <h2>Create New Account</h2>
+        NAME : <input type="text" class="abc" name="name"/>
+        <br><br>
+        USER ID:&ensp;<input type="text" class="abc" name="username"/>
+        <br><br>
+        PASSWORD:&ensp;<input type="password" class="abc" name="password"/>
+        <br><br>
+        SELECT : <select name="category" id="select">
+            <option value="st">student</option>
+            <option value="t">teacher</option>
+            <option value="A">Admin</option>
+        </select>
+        <br><br>
+        <button id="a" onclick="fun()">Sign Up</button>
+    </form>
+</body>
+</html>
